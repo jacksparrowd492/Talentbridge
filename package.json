@@ -1,0 +1,24 @@
+{
+  "name": "talentbridge-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start:backend": "cd backend && node index.js",
+    "start:frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.3",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^8.2.2"
+  }
+}
